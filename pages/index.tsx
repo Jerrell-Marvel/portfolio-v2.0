@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
 
       <HomeSection2 />
-      <div className="w-full h-[300px] bg-slate-200"></div>
+      {/* <div className="w-full h-[300px] bg-slate-200"></div> */}
       <SkillsSection />
       <div className="w-full h-[3000px] bg-slate-200"></div>
       {/* <HomeSection /> */}
