@@ -5,9 +5,23 @@ import styles from "../styles/Home.module.css";
 import HomeSection from "../components/Sections/Home/HomeSection";
 import HomeSection2 from "../components/Sections/Home/HomeSection2";
 import SkillsSection from "../components/Sections/Skills/SkillsSection";
+import { motion } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const blurBgVariants = {
+  hidden: {
+    filter: "blur(50px)",
+  },
+
+  visible: {
+    filter: "blur(0px)",
+    transition: {
+      duration: 1,
+      ease: "easeOut",
+    },
+  },
+};
 export default function Home() {
   return (
     <>
@@ -22,11 +36,15 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
       </Head>
 
+      {/* <div className="top-0 left-0 right-0 bottom-0 absolute bg-slate-600 z-10 opacity-50 blur-md"> */}
+
+      {/* <motion.div variants={blurBgVariants} initial="hidden" animate="visible"> */}
       <HomeSection2 />
       {/* <div className="w-full h-[300px] bg-slate-200"></div> */}
       <SkillsSection />
       <div className="w-full h-[3000px] bg-slate-200"></div>
       {/* <HomeSection /> */}
+      {/* </motion.div> */}
     </>
   );
 }

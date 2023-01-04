@@ -31,7 +31,7 @@ const SkillsSection = () => {
 
         <div className="line-vertical h-full w-[1px] right-0 absolute"></div>
       </div>
-      <motion.div className="flex flex-wrap gap-16 justify-center min-h-screen pt-20 px-4" variants={containerVariants} initial="hidden" whileInView="visible">
+      <motion.div className="flex flex-wrap gap-16 justify-center py-20 px-4 items-center" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ amount: 0.5 }}>
         {[...Array(15)].map((e) => {
           return (
             <motion.div variants={logoVariants} key={e}>
