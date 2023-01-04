@@ -24,6 +24,7 @@ export default function Home() {
 
       <HomeSection2 />
       <SkillsSection />
+      <div className="w-full h-[3000px] bg-slate-200"></div>
       {/* <HomeSection /> */}
     </>
   );

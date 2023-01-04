@@ -10,6 +10,7 @@ module.exports = {
 
       gridTemplateColumns: {
         "home-lg": "5fr 3fr",
+        "sticky-lg": "1fr 5fr",
       },
 
       fontFamily: {

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const HomeSection2 = () => {
   return (
-    <div className="bg-slate-700">
+    <div className="bg-slate-700 border-b-[1px] border-slate-700">
       <div className="grid-cols-1 grid sm:grid-cols-home-lg text-white gap-[1px]">
         {/* Main image */}
         <div className="bg-main-black h-72 sm:h-96 relative"></div>
@@ -22,7 +22,7 @@ const HomeSection2 = () => {
         </div>
 
         <div className="p-8 bg-main-black flex items-center gap-4">
-          <h3 className="text-6xl font-extrabold">skills</h3>
+          <h3 className="text-6xl font-extrabold">Lorem</h3>
         </div>
       </div>
     </div>

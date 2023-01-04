@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer base {
   body {
-    @apply overflow-hidden;
+    @apply text-white bg-main-black;
   }
-} */
+}
 
 @layer utilities {
   .line-blue {
     background: linear-gradient(to right, transparent 0%, #000875 45%, #000875 55%, transparent 100%);
+  }
+
+  .line-vertical {
+    background: linear-gradient(to bottom, transparent 0%, #334155 15%, #334155 85%, transparent 100%);
   }
 }
