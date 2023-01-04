@@ -25,9 +25,9 @@ const logoVariants = {
 };
 const SkillsSection = () => {
   return (
-    <section className="grid grid-cols-sticky-lg bg-main-black">
+    <section className="grid sm:grid-cols-sticky-lg bg-main-black grid-cols-sticky">
       <div className="sticky top-0 flex max-h-screen items-center justify-center w-full">
-        <h5 className="font-bold text-6xl">skills</h5>
+        <h5 className="font-bold text-2xl -rotate-90 sm:text-4xl sm:rotate-0">skills</h5>
 
         <div className="line-vertical h-full w-[1px] right-0 absolute"></div>
       </div>
@@ -35,7 +35,7 @@ const SkillsSection = () => {
         {[...Array(15)].map((e) => {
           return (
             <motion.div variants={logoVariants} key={e}>
-              <div className="h-[63px] w-[72px] relative">
+              <div className="h-[62px] w-[72px] relative">
                 <Image fill src="/react-logo.png" alt="react" className="grayscale" />
               </div>
               <p className="text-center mt-4 font-semibold text-xl">React</p>
