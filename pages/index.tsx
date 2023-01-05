@@ -6,6 +6,7 @@ import HomeSection from "../components/Sections/Home/HomeSection";
 import HomeSection2 from "../components/Sections/Home/HomeSection2";
 import SkillsSection from "../components/Sections/Skills/SkillsSection";
 import { motion } from "framer-motion";
+import ParallaxText from "../components/ParralaxText/ParralaxText";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,6 +41,8 @@ export default function Home() {
 
       {/* <motion.div variants={blurBgVariants} initial="hidden" animate="visible"> */}
       <HomeSection2 />
+      <ParallaxText baseVelocity={-5}>Frontend development</ParallaxText>
+      <ParallaxText baseVelocity={5}>Backend development</ParallaxText>
       {/* <div className="w-full h-[300px] bg-slate-200"></div> */}
       <SkillsSection />
       <div className="w-full h-[3000px] bg-slate-200"></div>

@@ -17,3 +17,58 @@
     background: linear-gradient(to bottom, transparent 0%, #334155 15%, #334155 85%, transparent 100%);
   }
 }
+/* 
+body {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --background: var(--purple);
+  --accent: var(--white);
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--accent);
+} */
+
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.parallax .scroller {
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  font-size: 100px;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  display: block;
+  margin-right: 30px;
+}
