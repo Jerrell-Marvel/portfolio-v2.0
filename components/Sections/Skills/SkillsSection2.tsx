@@ -49,6 +49,24 @@ const h4Variants = {
     },
   },
 };
+
+const skillsLogo = [
+  { name: "HTML", img: "html.png" },
+  { name: "CSS", img: "css.png" },
+  { name: "Javascript", img: "javascript.png" },
+  { name: "Typescript", img: "typescript.svg" },
+  { name: "SASS", img: "sass.png" },
+  { name: "TailwindCSS", img: "tailwind.png" },
+  { name: "React", img: "react.png" },
+  { name: "React Query", img: "react-query.png" },
+  { name: "Node.js", img: "nodejs.png" },
+  { name: "Express.js", img: "expressjs.png" },
+  { name: "mongoDB", img: "mongodb.png" },
+  { name: "Mongoose", img: "mongoose.png" },
+  { name: "Framer Motion", img: "framer-motion.png" },
+  { name: "Figma", img: "figma.png" },
+  { name: "Next.js", img: "nextjs.png" },
+];
 const SkillsSection2 = () => {
   return (
     <>
@@ -66,14 +84,14 @@ const SkillsSection2 = () => {
             >
               Skills
             </motion.h5>
-            {[...Array(15)].map((e, i) => {
+            {skillsLogo.map((logo, i) => {
               return (
                 <motion.div variants={logoVariants} key={i}>
-                  <motion.div whileHover="hover" className="grayscale flex flex-col items-center" variants={logoWrapperVariants}>
-                    <div className="h-[62px] w-[72px] relative md:h-[124px] md:w-[144px]">
-                      <Image fill src="/react-logo.png" alt="react" />
+                  <motion.div whileHover="hover" className="grayscale flex flex-col items-center w-[62px] md:w-[124px]" variants={logoWrapperVariants}>
+                    <div className="h-[62px] w-[62px] relative md:h-[124px] md:w-[124px]">
+                      <Image fill src={`/${logo.img}`} alt="react" className="object-contain w-full aspect-square" />
                     </div>
-                    <p className="text-center mt-4 font-semibold text-xl">React</p>
+                    <p className="text-center mt-4 font-semibold text-xl">{logo.name}</p>
                   </motion.div>
                 </motion.div>
               );
