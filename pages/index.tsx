@@ -15,6 +15,7 @@ import Test2 from "../components/Test2";
 import PortfolioSection from "../components/Sections/Portfolio/PortfolioSection";
 import ContactSection from "../components/Sections/ContactSection/ContactSection";
 import Footer from "../components/Footer/Footer";
+import ProgressBar from "../components/ProgressBar/ProgressBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +52,7 @@ export default function Home() {
       {/* <motion.div variants={blurBgVariants} initial="hidden" animate="visible"> */}
 
       {/* <HomeSection2 /> */}
+      <ProgressBar />
       <HomeSection3 />
 
       <AboutSection />

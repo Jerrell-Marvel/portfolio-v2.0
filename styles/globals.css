@@ -24,6 +24,10 @@
     background: linear-gradient(to bottom, transparent 0%, #050a18 100%);
   }
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
 /* 
 body {
   --black: #000000;
