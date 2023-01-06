@@ -52,7 +52,7 @@ const Footer = () => {
       <div className="bg-gradient-bottom absolute bottom-[0] w-full h-1/2"></div>
 
       <motion.div className="md:text-3xl text-lg text-slate-500 absolute bottom-0 w-full text-center pb-8 md:pb-16" variants={textVariants} initial="hidden" whileInView="visible">
-        <p>Copyright 2022</p>
+        <p>©2022 Jerrell Marvel</p>
       </motion.div>
     </div>
   );

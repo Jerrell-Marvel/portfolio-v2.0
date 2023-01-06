@@ -30,9 +30,9 @@ const logoVariants = {
 };
 
 const logos = [
-  { link: "https://www.youtube.com/", name: "Instagram", img: "instagram.webp" },
-  { link: "https://www.youtube.com/", name: "Linked in", img: "linked-in.png" },
-  { link: "https://www.youtube.com/", name: "Github", img: "github.png" },
+  { link: "https://www.instagram.com/jerrell.marvel/", name: "Instagram", img: "instagram.webp" },
+  { link: "https://www.linkedin.com/in/jerrell-marvel-573aa0256/", name: "Linked in", img: "linked-in.png" },
+  { link: "https://github.com/Jerrell-Marvel", name: "Github", img: "github.png" },
 ];
 
 const ContactSection = () => {
@@ -45,7 +45,7 @@ const ContactSection = () => {
       {/* <p className="md:text-5xl text-xl">gggggggggggg</p> */}
       {/* <p className="md:text-5xl text-xl block">jerrell.marvel88@gmail.com</p> */}
 
-      <motion.a href="https://www.youtube.com/" className="md:text-5xl text-xl inline-block" variants={textVariants} whileInView="visible" initial="hidden">
+      <motion.a href="mailto:jerrell.marvel88@gmail.com" className="md:text-5xl text-xl inline-block" variants={textVariants} whileInView="visible" initial="hidden">
         jerrell.marvel88@gmail.com
       </motion.a>
 
@@ -53,7 +53,7 @@ const ContactSection = () => {
         {logos.map((logo) => {
           return (
             <motion.div className="w-8 h-8 grayscale" variants={logoVariants} whileHover="hover" key={logo.name}>
-              <a href={logo.link}>
+              <a href={logo.link} target="_blank" rel="noreferrer">
                 <motion.img src={`/${logo.img}`} alt="" className="w-full" />
               </a>
             </motion.div>

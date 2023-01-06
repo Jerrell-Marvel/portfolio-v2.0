@@ -5,7 +5,7 @@ const pVariants = {
   hidden: {
     // filter: "blur(30px)",
     opacity: 0,
-    y: "100%",
+    y: "75%",
   },
   visible: {
     // filter: "blur(0px)",
