@@ -31,10 +31,10 @@ const SkillsSection = () => {
 
         <div className="line-vertical h-full w-[1px] right-0 absolute"></div>
       </div>
-      <motion.div className="flex flex-wrap gap-16 justify-center py-20 px-4 items-center" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ amount: 0.5 }}>
-        {[...Array(15)].map((e) => {
+      <motion.div className="flex flex-wrap gap-16 justify-center py-20 px-4 items-center" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ amount: 0.2 }}>
+        {[...Array(15)].map((e, i) => {
           return (
-            <motion.div variants={logoVariants} key={e}>
+            <motion.div variants={logoVariants} key={i}>
               <div className="h-[62px] w-[72px] relative">
                 <Image fill src="/react-logo.png" alt="react" className="grayscale" />
               </div>
