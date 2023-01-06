@@ -5,12 +5,12 @@ const pVariants = {
   hidden: {
     // filter: "blur(30px)",
     opacity: 0,
-    x: "-50%",
+    y: "100%",
   },
   visible: {
     // filter: "blur(0px)",
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: {
       type: "spring",
       duration: 1,
@@ -30,8 +30,9 @@ const AboutSection = () => {
   }, []);
   return (
     <motion.div className="text-center md:text-5xl font-extrabold text-xl md:py-20 px-12 pt-8 overflow-hidden md:pt-16">
-      <motion.p variants={pVariants} initial="hidden" whileInView="visible" style={{ scale: scaleP }} className="text-slate-200">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi inventore impedit officiis id error exercitationem! Voluptatem in, aspernatur aliquid ipsa temporibus nihil optio quisquam, perspiciatis corrupti ea, enim omnis.
+      <motion.p variants={pVariants} initial="hidden" whileInView="visible" style={{ scale: scaleP }} className="text-slate-200" viewport={{ once: true }}>
+        Hi there! My name is Jerrell Marvel a computer science student at UNPAR. I am extremely passionate about web development and always look for opportunities to expand my knowledge and skills in this field. In my free time, you can
+        find me tinkering with new projects or researching the latest trends in web development.
       </motion.p>
       {/* <div></div>
 
