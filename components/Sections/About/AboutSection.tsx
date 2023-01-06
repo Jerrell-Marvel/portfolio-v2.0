@@ -18,18 +18,18 @@ const pVariants = {
   },
 };
 const AboutSection = () => {
-  const { scrollYProgress } = useScroll();
+  // const { scrollYProgress } = useScroll();
 
   const scaleP = useSpring(1);
 
-  useEffect(() => {
-    return scrollYProgress.onChange((latest) => {
-      scaleP.set(1.05 - latest);
-    });
-    // return unsubscribeY();
-  }, []);
+  // useEffect(() => {
+  //   return scrollYProgress.onChange((latest) => {
+  //     scaleP.set(1.05 - latest);
+  //   });
+  //   // return unsubscribeY();
+  // }, []);
   return (
-    <motion.div className="text-center md:text-5xl font-extrabold text-xl md:py-20 px-12 pt-8 overflow-hidden ">
+    <motion.div className="text-center md:text-5xl font-extrabold text-xl md:py-20 px-12 pt-8 overflow-hidden md:pt-16">
       <motion.p variants={pVariants} initial="hidden" whileInView="visible" style={{ scale: scaleP }} className="text-slate-200">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi inventore impedit officiis id error exercitationem! Voluptatem in, aspernatur aliquid ipsa temporibus nihil optio quisquam, perspiciatis corrupti ea, enim omnis.
       </motion.p>

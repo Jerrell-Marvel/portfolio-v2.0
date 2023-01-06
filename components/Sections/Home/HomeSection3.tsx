@@ -62,23 +62,23 @@ const imgVariants = {
   },
 };
 const HomeSection3 = () => {
-  const { scrollYProgress } = useScroll();
+  //   const { scrollYProgress } = useScroll();
 
-  const scale = useSpring(1);
-  const y = useSpring(1);
+  //   const scale = useSpring(1);
+  //   const y = useSpring(1);
 
-  useEffect(() => {
-    return scrollYProgress.onChange((latest) => {
-      scale.set(1 + latest);
-      y.set(latest * 1000);
-    });
-    // return unsubscribeY();
-  }, []);
+  //   useEffect(() => {
+  //     return scrollYProgress.onChange((latest) => {
+  //       scale.set(1 + latest);
+  //       y.set(latest * 1000);
+  //     });
+  //     // return unsubscribeY();
+  //   }, []);
   return (
     <>
       <div></div>
       <section className="overflow-hidden">
-        <div className="px-12 pt-8">
+        <div className="px-12 pt-8 md:pt-16">
           <div className="flex flex-col items-center sm:flex-row">
             <div className="w-full flex-col justify-center sm:flex sm:pr-4 md:pr-6 lg:pr-8">
               <motion.div variants={typingContainerVariants} initial="hidden" whileInView="visible" className="mb-4">

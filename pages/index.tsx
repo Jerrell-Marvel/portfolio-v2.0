@@ -62,13 +62,13 @@ export default function Home() {
       <SkillsSection2 />
       {/* <div className="w-full h-screen bg-no-repeat bg-[url('/test-img.jpg')] bg-cover"></div> */}
 
-      <Test2 />
       <PortfolioSection />
+      <Test2 />
       {/* <Test /> */}
 
       {/* <div className="w-full h-[300px] bg-slate-200"></div> */}
       {/* <SkillsSection /> */}
-      <div className="w-full h-[600px] bg-main-black"></div>
+      {/* <div className="w-full h-[600px] bg-main-black"></div> */}
       {/* <div className="w-full h-[3000px] bg-slate-200"></div> */}
       {/* <HomeSection /> */}
       {/* </motion.div> */}
