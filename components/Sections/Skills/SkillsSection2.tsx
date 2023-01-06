@@ -89,7 +89,7 @@ const SkillsSection2 = () => {
                 <motion.div variants={logoVariants} key={i}>
                   <motion.div whileHover="hover" className="grayscale flex flex-col items-center w-[62px] md:w-[124px]" variants={logoWrapperVariants}>
                     <div className="h-[62px] w-[62px] relative md:h-[124px] md:w-[124px]">
-                      <Image fill src={`/${logo.img}`} alt="react" className="object-contain w-full aspect-square" />
+                      <Image fill src={`/${logo.img}`} alt={logo.name} className="object-contain w-full aspect-square" />
                     </div>
                     <p className="text-center mt-4 font-semibold text-xl">{logo.name}</p>
                   </motion.div>
