@@ -13,6 +13,7 @@ import Test from "../components/Test";
 import HomeSection3 from "../components/Sections/Home/HomeSection3";
 import Test2 from "../components/Test2";
 import PortfolioSection from "../components/Sections/Portfolio/PortfolioSection";
+import ContactSection from "../components/Sections/ContactSection/ContactSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -63,6 +64,7 @@ export default function Home() {
       {/* <div className="w-full h-screen bg-no-repeat bg-[url('/test-img.jpg')] bg-cover"></div> */}
 
       <PortfolioSection />
+      <ContactSection />
       <Test2 />
       {/* <Test /> */}
 
