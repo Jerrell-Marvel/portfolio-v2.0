@@ -14,6 +14,7 @@ import HomeSection3 from "../components/Sections/Home/HomeSection3";
 import Test2 from "../components/Test2";
 import PortfolioSection from "../components/Sections/Portfolio/PortfolioSection";
 import ContactSection from "../components/Sections/ContactSection/ContactSection";
+import Footer from "../components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -65,7 +66,7 @@ export default function Home() {
 
       <PortfolioSection />
       <ContactSection />
-      <Test2 />
+      <Footer />
       {/* <Test /> */}
 
       {/* <div className="w-full h-[300px] bg-slate-200"></div> */}

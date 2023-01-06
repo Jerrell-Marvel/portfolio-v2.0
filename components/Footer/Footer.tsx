@@ -42,19 +42,7 @@ const textVariants = {
   },
 };
 
-const Test2 = () => {
-  //   const { scrollYProgress } = useScroll();
-
-  //   const scale = useSpring(1);
-  //   const y = useSpring(1);
-
-  //   useEffect(() => {
-  //     return scrollYProgress.onChange((latest) => {
-  //       scale.set(1 + latest * 5);
-  //       y.set(latest * 1000);
-  //     });
-  //     // return unsubscribeY();
-  //   }, []);
+const Footer = () => {
   return (
     <div className="w-full relative overflow-hidden">
       <motion.img src="/bg-landscape2.webp" alt="" className="opacity-20 block bg-fixed" whileInView="visible" variants={imgVariants} />
@@ -68,4 +56,4 @@ const Test2 = () => {
   );
 };
 
-export default Test2;
+export default Footer;
