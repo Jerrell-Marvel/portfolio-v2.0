@@ -88,14 +88,6 @@ const imgVariants = {
   },
 };
 
-// const textContainerVariants = {
-//   visible: {
-//     transition: {
-//       staggerChildren: 0.1,
-//     },
-//   },
-// };
-
 const projects = [
   {
     title: "Jerrell Store",
@@ -134,8 +126,6 @@ const PortfolioSection = () => {
             <motion.h3 className="text-5xl sm:text-7xl md:text-9xl leading-none text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center w-full" variants={h3Variants}>
               Portfolio
             </motion.h3>
-            <div id="lol"></div>
-
             {projects.map((project, i) => {
               return <PortfolioItem key={project.title} direction={(i + 1) % 2 === 0 ? "right" : "left"} projectDetails={project} setProjectDetails={setProjectDetails} />;
             })}
