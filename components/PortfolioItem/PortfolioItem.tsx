@@ -83,7 +83,7 @@ const PortfolioItem = ({ direction, projectDetails, setProjectDetails }: Portfol
 
       <div className={`${direction === "left" ? "md:ml-8" : "md:mr-8"} mt-3 md:mt-0 md:w-1/3`}>
         <h5 className="md:text-5xl font-extrabold text-xl">{projectDetails.title}</h5>
-        <p className="md:text-1xl text-base text-slate-500">{projectDetails.description}</p>
+        <p className="md:text-1xl text-base text-slate-500 xl:text-2xl">{projectDetails.description}</p>
       </div>
     </motion.div>
   );
