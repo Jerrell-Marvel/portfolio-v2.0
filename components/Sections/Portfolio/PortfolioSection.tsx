@@ -88,30 +88,18 @@ const imgVariants = {
   },
 };
 
-const projects = [
+const projects: projectDetailsType[] = [
   {
     title: "Jerrell Store",
-    description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed aspernatur quod, saepe dicta quis eveniet debitis vel? Odio, vitae rerum illum velit doloremque, corrupti accusantium cum neque ut voluptatum esse",
-    images: ["bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg"],
-    createdWith: ["React", "TailwindCSS", "React Query", "Express.js", "MongoDB", "Mongoose"],
+    description: "An e-commerce website with e-commerce features such as login, logout, search products, filter products, wishlist, and cart.",
+    images: ["jerrell-store-1.jpg", "jerrell-store-2.jpg", "jerrell-store-3.jpg", "jerrell-store-4.jpg", "jerrell-store-5.jpg", "jerrell-store-6.jpg", "jerrell-store-7.jpg"],
+    createdWith: ["React (Also recreated with Next.js)", "React Query", "TailwindCSS", "Express.js", "MongoDB", "Mongoose"],
   },
   {
-    title: "Jerrell Store 2",
-    description: "uvuvuivxuovuixouvox ossas",
-    images: ["bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg"],
-    createdWith: ["React", "TailwindCSS", "React Query", "Express.js", "MongoDB", "Mongoose"],
-  },
-  {
-    title: "Jerrell Store 3",
-    description: "uvuvuivxuovuixouvox ossas",
-    images: ["bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg"],
-    createdWith: ["React", "TailwindCSS", "React Query", "Express.js", "MongoDB", "Mongoose"],
-  },
-  {
-    title: "Jerrell Store 4",
-    description: "uvuvuivxuovuixouvox ossas",
-    images: ["bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg", "bg-landscape2.jpg"],
-    createdWith: ["React", "TailwindCSS", "React Query", "Express.js", "MongoDB", "Mongoose"],
+    title: "24 Card Game Solver",
+    description: "A website providing a wide array of solutions for the popular 24 card game",
+    images: ["24-solver-1.jpg", "24-solver-2.jpg", "24-solver-3.jpg", "24-solver-4.jpg"],
+    createdWith: ["HTML", "CSS", "Javascript"],
   },
 ];
 
@@ -126,9 +114,14 @@ const PortfolioSection = () => {
             <motion.h3 className="text-5xl sm:text-7xl md:text-9xl leading-none text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center w-full" variants={h3Variants}>
               Portfolio
             </motion.h3>
+
             {projects.map((project, i) => {
-              return <PortfolioItem key={project.title} direction={(i + 1) % 2 === 0 ? "right" : "left"} projectDetails={project} setProjectDetails={setProjectDetails} />;
+              return <PortfolioItem key={`${project.title}`} direction={(i + 1) % 2 === 0 ? "right" : "left"} projectDetails={project} setProjectDetails={setProjectDetails} />;
             })}
+
+            {/* {projects.map((project, i) => {
+              return <PortfolioItem key={project.title} direction={(i + 1) % 2 === 0 ? "right" : "left"} projectDetails={project} setProjectDetails={setProjectDetails} />;
+            })} */}
 
             {/* <PortfolioItem direction="right" link="/jerrell-store" />
           <PortfolioItem direction="left" link="/jerrell-store" />
@@ -137,7 +130,7 @@ const PortfolioSection = () => {
 
             <AnimatePresence>
               {projectDetails ? (
-                <motion.div className="h-screen w-full bg-main-black fixed top-0 left-0 right-0 z-[9999] overflow-y-auto px-12 pt-8 md:pt-16" initial="hidden" animate="visible" variants={detailContainerVariants} exit="hidden">
+                <motion.div className="h-screen w-full bg-main-black fixed top-0 left-0 right-0 z-[9999] overflow-y-auto px-12 pt-y md:py-16" initial="hidden" animate="visible" variants={detailContainerVariants} exit="hidden">
                   <motion.div
                     onClick={() => {
                       setProjectDetails(null);
@@ -170,7 +163,7 @@ const PortfolioSection = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4 sm:mt-8">
                     {projectDetails.images.map((img) => {
-                      return <motion.img src={img} alt="" variants={imgVariants} key={img} />;
+                      return <motion.img src={`/${img}`} alt="" variants={imgVariants} key={img} />;
                     })}
                   </div>
                 </motion.div>

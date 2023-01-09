@@ -58,7 +58,7 @@ const PortfolioItem = ({ direction, projectDetails, setProjectDetails }: Portfol
       //   viewport={{ amount: 0.8 }}
     >
       <motion.div
-        className="md:w-1/2 w-full relative cursor-pointer"
+        className="md:w-2/3 w-full relative cursor-pointer"
         variants={containerHover}
         whileHover="hover"
         initial="hidden"
@@ -68,7 +68,7 @@ const PortfolioItem = ({ direction, projectDetails, setProjectDetails }: Portfol
       >
         {/* <Link href={`${link}`} passHref legacyBehavior> */}
         {/* <a> */}
-        <motion.img src="/bg-landscape.jpg" alt="" />
+        <motion.img src={projectDetails.images[0]} alt="" />
         <motion.div className="bg-main-black absolute top-0 bottom-0 left-0 right-0 flex items-center" variants={bgHover}></motion.div>
 
         {/* <div className="flex items-center justify-center absolute top-0 bottom-0 left-0 right-0"> */}
@@ -81,9 +81,9 @@ const PortfolioItem = ({ direction, projectDetails, setProjectDetails }: Portfol
         {/* </div> */}
       </motion.div>
 
-      <div className="md:ml-8 mt-6 md:mt-0">
+      <div className={`${direction === "left" ? "md:ml-8" : "md:mr-8"} mt-6 md:mt-0 md:w-1/3`}>
         <h5 className="md:text-5xl font-extrabold text-xl">{projectDetails.title}</h5>
-        <p className="md:text-3xl text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione</p>
+        <p className="md:text-1xl text-base text-slate-500">{projectDetails.description}</p>
       </div>
     </motion.div>
   );
