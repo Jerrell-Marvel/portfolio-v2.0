@@ -130,7 +130,7 @@ const PortfolioSection = () => {
 
             <AnimatePresence>
               {projectDetails ? (
-                <motion.div className="h-screen w-full bg-main-black fixed top-0 left-0 right-0 z-[9999] overflow-y-auto px-12 pt-y md:py-16" initial="hidden" animate="visible" variants={detailContainerVariants} exit="hidden">
+                <motion.div className="h-screen w-full bg-main-black fixed top-0 left-0 right-0 z-[9999] overflow-y-auto p-12 md:p-16" initial="hidden" animate="visible" variants={detailContainerVariants} exit="hidden">
                   <motion.div
                     onClick={() => {
                       setProjectDetails(null);
