@@ -38,7 +38,7 @@ const logos = [
 const ContactSection = () => {
   return (
     <div className="pt-8 md:pt-16 text-center px-12 pb-8 top-0 z-40 sticky overflow-hidden">
-      <motion.h3 className="text-5xl sm:text-7xl md:text-9xl text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent mb-8" variants={textVariants} whileInView="visible" initial="hidden">
+      <motion.h3 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent mb-8" variants={textVariants} whileInView="visible" initial="hidden">
         Contact me
       </motion.h3>
 

@@ -77,7 +77,7 @@ const SkillsSection2 = () => {
           </motion.h4> */}
           <motion.div className="flex flex-wrap gap-16 items-center justify-center pt-8 pb-16" variants={containerVariants} initial="hidden" whileInView="visible">
             <motion.h5
-              className="text-5xl sm:text-7xl md:text-9xl leading-none text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center w-full"
+              className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center w-full"
               variants={logoVariants}
               // initial="hidden"
               // whileInView="visible"
@@ -88,7 +88,7 @@ const SkillsSection2 = () => {
               return (
                 <motion.div variants={logoVariants} key={i}>
                   <motion.div whileHover="hover" className="grayscale flex flex-col items-center w-[62px] md:w-[124px]" variants={logoWrapperVariants}>
-                    <div className="h-[62px] w-[62px] relative md:h-[124px] md:w-[124px]">
+                    <div className="h-[62px] w-[62px] relative md:w-[96px] md:h-[96px] lg:h-[124px] lg:w-[124px]">
                       <Image fill src={`/${logo.img}`} alt={logo.name} className="object-contain w-full aspect-square" />
                     </div>
                     <p className="text-center mt-4 font-semibold text-xl">{logo.name}</p>
