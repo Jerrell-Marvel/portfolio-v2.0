@@ -82,11 +82,11 @@ const HomeSection3 = () => {
       <section className="overflow-hidden">
         <div className="px-12 pt-8 md:pt-16">
           <div className="flex flex-col items-center sm:flex-row">
-            <div className="w-full flex-col justify-center sm:flex sm:pr-4 md:pr-6 lg:pr-8">
+            <div className="w-full flex-col justify-center sm:flex sm:pr-4 md:pr-6 lg:pr-8 sm:w-1/2">
               <motion.div variants={typingContainerVariants} initial="hidden" whileInView="visible" className="mb-4">
                 {h1Text.split("").map((char, i) => {
                   return (
-                    <motion.span key={`h1${char}${i}`} className="text-5xl sm:text-7xl md:text-9xl text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent" variants={typingVariants}>
+                    <motion.span key={`h1${char}${i}`} className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent" variants={typingVariants}>
                       {char}
                     </motion.span>
                   );
@@ -97,7 +97,7 @@ const HomeSection3 = () => {
               <motion.div variants={typingContainerVariants} initial="hidden" whileInView="visible" className="mb-4">
                 {h2Text.split("").map((char, i) => {
                   return (
-                    <motion.span key={`h1${char}${i}`} className="md:text-5xl text-xl text-slate-500" variants={typingVariants}>
+                    <motion.span key={`h1${char}${i}`} className="md:text-3xl lg:text-5xl text-xl text-slate-500" variants={typingVariants}>
                       {char}
                     </motion.span>
                   );
@@ -113,7 +113,7 @@ const HomeSection3 = () => {
               </Link> */}
             </div>
 
-            <motion.div className="h-full w-full sm:ml-4 md:ml-6 lg:ml-8 relative" variants={imgVariants} whileInView="visible" initial="hidden">
+            <motion.div className="h-full w-full sm:ml-4 md:ml-6 lg:ml-8 relative sm:w-1/2" variants={imgVariants} whileInView="visible" initial="hidden">
               <Image
                 alt="hero-img"
                 src={heroImg}
