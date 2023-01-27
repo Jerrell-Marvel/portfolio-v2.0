@@ -2,6 +2,8 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import { useEffect } from "react";
 const h1Text = "Jerrell Marvel";
 const h2Text = "Web Developer";
+import heroImg from "../../../public/hero-img.jpg";
+import Image from "next/legacy/image";
 
 const typingContainerVariants = {
   hidden: {},
@@ -111,18 +113,17 @@ const HomeSection3 = () => {
               </Link> */}
             </div>
 
-            <div className="h-full w-full sm:ml-4 md:ml-6 lg:ml-8 relative">
-              {/* <motion.div className="absolute top-0 bottom-0 right-0 left-0 bg-main-black" variants={bgImgVariants} animate="visible" initial="hidden"></motion.div> */}
-              <motion.img
-                src="https://www.designyourway.net/blog/wp-content/uploads/2019/05/iPad-Pro-wallpaper-54-700x700.jpg"
-                alt=""
+            <motion.div className="h-full w-full sm:ml-4 md:ml-6 lg:ml-8 relative" variants={imgVariants} whileInView="visible" initial="hidden">
+              <Image
+                alt="hero-img"
+                src={heroImg}
                 className="mx-auto max-w-full"
-                variants={imgVariants}
-                whileInView="visible"
-                initial="hidden"
                 // style={{ scale }}
+                width={700}
+                height={700}
+                layout="responsive"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
