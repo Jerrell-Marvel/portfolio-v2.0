@@ -71,12 +71,11 @@ html {
 .parallax .scroller {
   font-weight: 600;
   /* text-transform: uppercase; */
-  font-size: 72px;
   display: flex;
   white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
-  @apply text-slate-500;
+  @apply text-slate-500 text-7xl lg:text-8xl;
 }
 
 .parallax span {

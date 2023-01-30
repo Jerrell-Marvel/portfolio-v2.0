@@ -57,7 +57,7 @@ export default function Home() {
 
       <AboutSection />
 
-      <div className="pt-4">
+      <div>
         <ParallaxText baseVelocity={-5}>Frontend development</ParallaxText>
         <ParallaxText baseVelocity={5}>Backend development</ParallaxText>
       </div>
