@@ -86,7 +86,11 @@ const HomeSection3 = () => {
               <motion.div variants={typingContainerVariants} initial="hidden" whileInView="visible" className="mb-4">
                 {h1Text.split("").map((char, i) => {
                   return (
-                    <motion.span key={`h1${char}${i}`} className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent" variants={typingVariants}>
+                    <motion.span
+                      key={`h1${char}${i}`}
+                      className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[9rem] text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
+                      variants={typingVariants}
+                    >
                       {char}
                     </motion.span>
                   );
@@ -97,7 +101,7 @@ const HomeSection3 = () => {
               <motion.div variants={typingContainerVariants} initial="hidden" whileInView="visible" className="mb-4">
                 {h2Text.split("").map((char, i) => {
                   return (
-                    <motion.span key={`h1${char}${i}`} className="md:text-3xl lg:text-5xl text-xl text-slate-500" variants={typingVariants}>
+                    <motion.span key={`h1${char}${i}`} className="md:text-3xl lg:text-5xl xl:text-6xl text-xl text-slate-500" variants={typingVariants}>
                       {char}
                     </motion.span>
                   );
