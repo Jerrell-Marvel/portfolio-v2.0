@@ -67,7 +67,7 @@ const skillsLogo = [
   { name: "Figma", img: "figma.png" },
   { name: "Next.js", img: "nextjs.png" },
 ];
-const SkillsSection2 = () => {
+const SkillsSection = () => {
   return (
     <>
       <section className="overflow-hidden relative">
@@ -87,8 +87,8 @@ const SkillsSection2 = () => {
             {skillsLogo.map((logo, i) => {
               return (
                 <motion.div variants={logoVariants} key={i}>
-                  <motion.div whileHover="hover" className="grayscale flex flex-col items-center w-[62px] md:w-[124px]" variants={logoWrapperVariants}>
-                    <div className="h-[62px] w-[62px] relative md:w-[96px] md:h-[96px] lg:h-[124px] lg:w-[124px]">
+                  <motion.div whileHover="hover" className="grayscale flex flex-col items-center" variants={logoWrapperVariants}>
+                    <div className="h-[62px] w-[62px] relative md:w-[96px] md:h-[96px] lg:h-[124px] lg:w-[124px]  2xl:w-[176px] 2xl:h-[176px]">
                       <Image fill src={`/${logo.img}`} alt={logo.name} className="object-contain w-full aspect-square" />
                     </div>
                     <p className="text-center mt-4 font-semibold text-xl">{logo.name}</p>
@@ -103,4 +103,4 @@ const SkillsSection2 = () => {
   );
 };
 
-export default SkillsSection2;
+export default SkillsSection;
