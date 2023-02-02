@@ -1,23 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
 import HomeSection from "../components/Sections/Home/HomeSection";
-import HomeSection2 from "../components/Sections/Home/HomeSection2";
-import SkillsSection from "../components/Sections/Skills/SkillsSection";
-import { motion } from "framer-motion";
 import ParallaxText from "../components/ParralaxText/ParralaxText";
-import SkillsSection2 from "../components/Sections/Skills/SkillsSection2";
+import SkillsSection from "../components/Sections/Skills/SkillsSection";
 import AboutSection from "../components/Sections/About/AboutSection";
-import Test from "../components/Test";
-import HomeSection3 from "../components/Sections/Home/HomeSection3";
-import Test2 from "../components/Test2";
 import PortfolioSection from "../components/Sections/Portfolio/PortfolioSection";
 import ContactSection from "../components/Sections/ContactSection/ContactSection";
 import Footer from "../components/Footer/Footer";
 import ProgressBar from "../components/ProgressBar/ProgressBar";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const blurBgVariants = {
   hidden: {
@@ -53,7 +42,7 @@ export default function Home() {
 
       {/* <HomeSection2 /> */}
       <ProgressBar />
-      <HomeSection3 />
+      <HomeSection />
 
       <AboutSection />
 
@@ -63,7 +52,7 @@ export default function Home() {
       </div>
 
       {/* <SkillsSection /> */}
-      <SkillsSection2 />
+      <SkillsSection />
       {/* <div className="w-full h-screen bg-no-repeat bg-[url('/test-img.jpg')] bg-cover"></div> */}
 
       <PortfolioSection />

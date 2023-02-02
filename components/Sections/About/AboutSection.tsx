@@ -34,9 +34,6 @@ const AboutSection = () => {
         Hi there! My name is Jerrell Marvel a computer science student at UNPAR. I am extremely passionate about web development and always look for opportunities to expand my knowledge and skills in this field. In my free time, you can
         find me tinkering with new projects or researching the latest trends in web development.
       </motion.p>
-      {/* <div></div>
-
-      <div></div> */}
     </motion.div>
   );
 };

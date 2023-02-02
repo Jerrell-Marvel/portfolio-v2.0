@@ -66,19 +66,12 @@ const PortfolioItem = ({ direction, projectDetails, setProjectDetails }: Portfol
           setProjectDetails(projectDetails);
         }}
       >
-        {/* <Link href={`${link}`} passHref legacyBehavior> */}
-        {/* <a> */}
         <motion.img src={projectDetails.images[0]} alt="" />
         <motion.div className="bg-main-black absolute top-0 bottom-0 left-0 right-0 flex items-center" variants={bgHover}></motion.div>
 
-        {/* <div className="flex items-center justify-center absolute top-0 bottom-0 left-0 right-0"> */}
         <motion.p className="text-lg md:text-4xl font-extrabold absolute top-1/2 left-1/2 inline-block" variants={textHover}>
           View Projects
         </motion.p>
-        {/* </a> */}
-        {/* </Link> */}
-
-        {/* </div> */}
       </motion.div>
 
       <div className={`${direction === "left" ? "md:ml-8" : "md:mr-8"} mt-3 md:mt-0 md:w-1/3`}>
