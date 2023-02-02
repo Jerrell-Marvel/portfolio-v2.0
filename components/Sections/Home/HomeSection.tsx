@@ -63,7 +63,7 @@ const imgVariants = {
     },
   },
 };
-const HomeSection3 = () => {
+const HomeSection = () => {
   //   const { scrollYProgress } = useScroll();
 
   //   const scale = useSpring(1);
@@ -134,4 +134,4 @@ const HomeSection3 = () => {
     </>
   );
 };
-export default HomeSection3;
+export default HomeSection;
