@@ -55,19 +55,20 @@ const skillsLogo = [
   { name: "CSS", img: "css.png" },
   { name: "Javascript", img: "javascript.png" },
   { name: "Typescript", img: "typescript.svg" },
+  { name: "Java", img: "java.png" },
   { name: "SASS", img: "sass.png" },
   { name: "TailwindCSS", img: "tailwind.png" },
   { name: "React", img: "react.png" },
   { name: "React Query", img: "react-query.png" },
+  { name: "Next.js", img: "nextjs.png" },
+  { name: "Jest", img: "jest.png" },
+  { name: "React testing", img: "react-testing.png" },
+  { name: "Framer Motion", img: "framer-motion.png" },
   { name: "Node.js", img: "nodejs.png" },
   { name: "Express.js", img: "expressjs.png" },
   { name: "mongoDB", img: "mongodb.png" },
   { name: "Mongoose", img: "mongoose.png" },
-  { name: "Framer Motion", img: "framer-motion.png" },
   { name: "Figma", img: "figma.png" },
-  { name: "Next.js", img: "nextjs.png" },
-  { name: "Jest", img: "jest.png" },
-  { name: "React testing", img: "react-testing.png" },
 ];
 const SkillsSection = () => {
   return (
@@ -78,7 +79,7 @@ const SkillsSection = () => {
             skills
           </motion.h4> */}
           <motion.div
-            className="flex flex-wrap gap-16 items-center justify-center pt-8 pb-16"
+            className="flex flex-wrap gap-16 items-center justify-center pt-8 pb-16 2xl:gap-20"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -102,7 +103,7 @@ const SkillsSection = () => {
                     className="grayscale flex flex-col items-center"
                     variants={logoWrapperVariants}
                   >
-                    <div className="h-[62px] w-[62px] relative md:w-[96px] md:h-[96px] lg:h-[124px] lg:w-[124px]  2xl:w-[176px] 2xl:h-[176px]">
+                    <div className="h-[62px] w-[62px] relative md:w-[96px] md:h-[96px] lg:h-[124px] lg:w-[124px]  2xl:w-[146px] 2xl:h-[146px]">
                       <Image
                         fill
                         src={`/${logo.img}`}
@@ -110,7 +111,7 @@ const SkillsSection = () => {
                         className="object-contain w-full aspect-square"
                       />
                     </div>
-                    <p className="text-center mt-4 font-semibold text-xl">{logo.name}</p>
+                    <p className="text-center mt-4 font-semibold text-xl lg:text-2xl">{logo.name}</p>
                   </motion.div>
                 </motion.div>
               );
