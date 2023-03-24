@@ -68,6 +68,7 @@ const skillsLogo = [
   { name: "Express.js", img: "expressjs.png" },
   { name: "mongoDB", img: "mongodb.png" },
   { name: "Mongoose", img: "mongoose.png" },
+  { name: "MySQL", img: "mysql.png" },
   { name: "Figma", img: "figma.png" },
 ];
 const SkillsSection = () => {
