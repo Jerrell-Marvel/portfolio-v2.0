@@ -12,13 +12,15 @@ type PortfolioItemPropsType = {
 const containerVariants = {
   hidden: {
     // x: "-50%",
+    // scale: 0,
     opacity: 0,
   },
   visible: {
-    x: 0,
+    // x: 0,
+    // scale: 1,
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
 };
@@ -66,17 +68,27 @@ const PortfolioItem = ({ direction, projectDetails, setProjectDetails }: Portfol
           setProjectDetails(projectDetails);
         }}
       >
-        <motion.img src={projectDetails.images[0]} alt="" />
-        <motion.div className="bg-main-black absolute top-0 bottom-0 left-0 right-0 flex items-center" variants={bgHover}></motion.div>
+        <motion.img
+          src={projectDetails.images[0]}
+          alt=""
+          className="w-full"
+        />
+        <motion.div
+          className="bg-main-black absolute top-0 bottom-0 left-0 right-0 flex items-center"
+          variants={bgHover}
+        ></motion.div>
 
-        <motion.p className="text-lg md:text-4xl font-extrabold absolute top-1/2 left-1/2 inline-block" variants={textHover}>
+        <motion.p
+          className="text-lg md:text-4xl font-extrabold absolute top-1/2 left-1/2 inline-block"
+          variants={textHover}
+        >
           View Projects
         </motion.p>
       </motion.div>
 
       <div className={`${direction === "left" ? "md:ml-8" : "md:mr-8"} mt-3 md:mt-0 md:w-1/3`}>
         <h5 className="md:text-5xl font-extrabold text-xl">{projectDetails.title}</h5>
-        <p className="md:text-1xl text-base text-slate-500 xl:text-2xl">{projectDetails.description}</p>
+        <p className="md:text-1xl text-base text-slate-500 xl:text-2xl mt-1 md:mt-2">{projectDetails.description}</p>
       </div>
     </motion.div>
   );
